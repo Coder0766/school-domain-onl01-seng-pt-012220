@@ -1,28 +1,27 @@
 # code here!
-class School 
-  attr_reader :name, :roster 
+class School
+  attr_reader :name, :roster
 
 def initialize(name)
-  @name = name 
-  @roster = {} 
-end 
+  @name = name
+  @roster = {}
+end
 
 def add_student(name,grade)
   if roster[grade]
-  roster[grade] << name 
-else 
+  roster[grade] << name
+else
   roster[grade] = [name]
-  end 
-end 
+  end
+end
 
 def grade(grade)
   roster[grade]
-end 
+end
 
-def sort 
+def sort
   @roster.each do |key,value|
   value.sort!
   end
  end
-end 
-
+end
