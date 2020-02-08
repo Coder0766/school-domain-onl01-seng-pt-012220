@@ -6,7 +6,6 @@ class School
   @name= name
  end
 
-
 end
 
-school= School.new
+
